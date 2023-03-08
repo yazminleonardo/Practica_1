@@ -1,0 +1,17 @@
+<app-header titulo="Page DATETIME-BUTTON"></app-header>
+
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>datetime-button</ion-title>
+  </ion-toolbar>
+</ion-header>-->
+
+<ion-content (click)="onClick()" class="ion-padding">
+  <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+  <ion-modal [keepContentsMounted]="true">
+    <ng-template>
+      <ion-datetime id="datetime"></ion-datetime>
+    </ng-template>
+  </ion-modal>
+</ion-content>

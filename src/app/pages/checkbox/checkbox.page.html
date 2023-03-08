@@ -1,0 +1,13 @@
+<app-header titulo="Page CHECKBOX"></app-header>
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>checkbox</ion-title>
+  </ion-toolbar>
+</ion-header>-->
+
+<ion-content (click)="onClick()" class="ion-padding">
+  <ion-item>
+    <ion-checkbox slot="start" [indeterminate]="true"></ion-checkbox>
+    <ion-label>Indeterminado</ion-label>
+  </ion-item>
+</ion-content>
