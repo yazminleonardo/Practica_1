@@ -1,0 +1,28 @@
+<app-header titulo="Page Toolbar"></app-header>
+
+<ion-content (click)="onclick()" class="ion-padding">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Header Toolbar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-toolbar>
+    <ion-title>Title</ion-title>
+  </ion-toolbar>
+  
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>Button</ion-button>
+    </ion-buttons>
+    <ion-title>Default Buttons</ion-title>
+  </ion-toolbar>
+
+  <!--<ion-nav [root]="component"></ion-nav>-->
+  
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>Footer Toolbar</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
