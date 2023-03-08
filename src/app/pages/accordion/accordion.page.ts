@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild} from '@angular/core';
-import { IonAccordionGroup } from '@ionic/angular';
+import { Component, OnInit , ViewChild, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'app-accordion',
@@ -8,9 +7,10 @@ import { IonAccordionGroup } from '@ionic/angular';
 })
 export class AccordionPage implements OnInit {
 
-  constructor() { }
 
   ngOnInit() {
   }
-
+  onClick(){
+  }
+  
 }

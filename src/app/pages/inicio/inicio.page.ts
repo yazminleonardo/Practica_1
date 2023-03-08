@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-//
-interface Componente{
+interface Componente{ 
   icon:string;
   name:string;
   redirecTo:string;
@@ -13,117 +12,116 @@ interface Componente{
 })
 export class InicioPage implements OnInit {
 
-  //arreglo
-  componentes:Componente[] =[
-    {
-      icon:"finger-print-outline",
-      name:"Action-Sheet",
-      redirecTo:"/action-sheet",
+  componentes:Componente[] = [
+    { 
+      icon:"glasses-outline",
+      name:"ACTION SHEET PAGE",
+      redirecTo:"/action"
     },
-    {
-      icon:"paw-outline",
-      name:"Alert",
-      redirecTo:"/alert",
+    { 
+      icon:"pencil-outline",
+      name:"ALERT PAGE",
+      redirecTo:"/alert"
     },
-    {
-      icon:"bandage-outline",
-      name:"Accordion",
-      redirecTo:"/accordion",
+    { 
+      icon:"color-filter-outline",
+      name:"ACCORDION PAGE",
+      redirecTo:"/accordion"
     },
-    {
-      icon:"newspaper-outline",
-      name:"Tipography",
-      redirecTo:"/tipography",
+    { 
+      icon:"logo-firebase",
+      name:"BADGE PAGE",
+      redirecTo:"/badge"
     },
-    {
-      icon:"footsteps-outline",
-      name:"Toolbar",
-      redirecTo:"/toolbar",
+    { 
+      icon:"logo-apple-ar",
+      name:"BREADCRUMBS PAGE",
+      redirecTo:"/breadcrumbs"
     },
-    {
-      icon:"game-controller-outline",
-      name:"Toggle",
-      redirecTo:"/toggle",
+    { 
+      icon:"stop-circle-outline",
+      name:"BUTTON PAGE",
+      redirecTo:"/button"
     },
-    {
-      icon:"grid-outline",
-      name:"Toast",
-      redirecTo:"/toast",
+    { 
+      icon:"layers-outline",
+      name:"RIPPLE - EFFECT PAGE",
+      redirecTo:"/ripple-effect"
     },
-    {
-      icon:"ice-cream-outline",
-      name:"Popover",
-      redirecTo:"/popover",
+    { 
+      icon:"happy-outline",
+      name:"CARD PAGE",
+      redirecTo:"/card"
     },
-    {
-      icon:"battery-half-outline",
-      name:"Range",
-      redirecTo:"/range",
+    { 
+      icon:"checkmark-outline",
+      name:"CHECKBOX PAGE",
+      redirecTo:"/checkbox"
     },
-    {
-      icon:"nutrition-outline",
-      name:"Select",
-      redirecTo:"/select",
+    { 
+      icon:"hardware-chip-outline",
+      name:"CHIP PAGE",
+      redirecTo:"/chip"
     },
-    {
-      icon:"paper-plane-outline",
-      name:"Segment",
-      redirecTo:"/segment",
+    { 
+      icon:"clipboard-outline",
+      name:"CONTENT PAGE",
+      redirecTo:"/content"
     },
-    {
-      icon:"options-outline",
-      name:"Searchbar",
-      redirecTo:"/searchbar",
+    { 
+      icon:"calendar-outline",
+      name:"DATETIME PAGE",
+      redirecTo:"/datetime"
     },
-    {
-      icon:"radio-outline",
-      name:"Routing",
-      redirecTo:"/ion-routing",
+    { 
+      icon:"caret-back-circle-outline",
+      name:"DATETIME-BUTTON PAGE",
+      redirecTo:"/datetime-button"
     },
-    {
-      icon:"pizza-outline",
-      name:"Tabs",
-      redirecTo:"/tabs",
+    { 
+      icon:"bookmark-outline",
+      name:"PICKER PAGE",
+      redirecTo:"/picker"
     },
-    {
-      icon:"reorder-four-outline",
-      name:"Reorder",
-      redirecTo:"/reorder",
-    },
-    {
-      icon:"airplane-outline",
-      name:"Slides",
-      redirecTo:"/slides",
-    },
-    {
-      icon:"cellular-outline",
-      name:"Radio",
-      redirecTo:"/radio",
-    },
-    {
-      icon:"cloud-upload-outline",
-      name:"Refresher",
-      redirecTo:"/refresher",
-    },
-    {
-      icon:"cut-outline",
-      name:"Progress Indicators",
-      redirecTo:"/progress-indicators",
-    },
-    {
-      icon:"ellipsis-vertical-outline",
-      name:"List",
-      redirecTo:"/list",
-    },
-    {
+    { 
       icon:"color-palette-outline",
-      name:"Item",
-      redirecTo:"/item",
+      name:"FAB PAGE",
+      redirecTo:"/fab"
     },
-    {
-      icon:"heart-circle-outline",
-      name:"Modal",
-      redirecTo:"/modal",
+    { 
+      icon:"ellipsis-vertical-circle-outline",
+      name:"MENU PAGE",
+      redirecTo:"/menu"
+    },
+    { 
+      icon:"extension-puzzle-outline",
+      name:"MEDIA PAGE",
+      redirecTo:"/media"
+    },
+    { 
+      icon:"disc-outline",
+      name:"GRID PAGE",
+      redirecTo:"/grid"
+    },
+    { 
+      icon:"sync-circle-outline",
+      name:"ICONS PAGE",
+      redirecTo:"/icons"
+    },
+    { 
+      icon:"filter-outline",
+      name:"INPUT PAGE",
+      redirecTo:"/input"
+    },
+    { 
+      icon:"navigate-outline",
+      name:"NAVIGATION PAGE",
+      redirecTo:"/nav"
+    },
+    { 
+      icon:"nuclear-outline",
+      name:"INFINITE-SCROLL PAGE",
+      redirecTo:"/infinite-scroll"
     }
   ];
   constructor() { }

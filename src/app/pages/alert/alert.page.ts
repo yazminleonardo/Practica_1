@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 
-
 @Component({
   selector: 'app-alert',
   templateUrl: './alert.page.html',
@@ -10,23 +9,31 @@ import { AlertController } from '@ionic/angular';
 export class AlertPage implements OnInit {
 
   constructor(private alertController : AlertController) { }
+
   ngOnInit() {
   }
-  onclick(){
+  onClick(){
     this.presentAlert();
   }
-
-  /* Mostrando action sheet de la documentacion*/
-  async presentAlert() {
+   /* Mostrando action sheet de la demostración */
+   async presentAlert() {
     const alert = await this.alertController.create({
-      header: 'Alert',
+      header: 'Are you sure?',
       backdropDismiss:false,
-      subHeader: 'Important message',
-      message: 'This is an alert!',
-      buttons: ['OK'],
+      cssClass: 'custom-alert',
+      buttons: [
+        {
+          text: 'No',
+          cssClass: 'alert-button-cancel',
+        },
+        {
+          text: 'Yes',
+          cssClass: 'alert-button-confirm',
+        },
+      ],
     });
 
     await alert.present();
   }
-
+  /* Terminando action sheet */
 }

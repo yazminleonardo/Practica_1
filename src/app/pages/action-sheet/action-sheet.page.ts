@@ -12,15 +12,17 @@ export class ActionSheetPage implements OnInit {
 
   ngOnInit() {
   }
-  onclick(){
+  onClick(){
     this.presentActionSheet();
   }
-
-  /* Mostrando action sheet de la documentacion*/
+  
+  /* Mostrando action sheet de la demostración */
   async presentActionSheet() {
     const actionSheet = await this.actionSheetCtrl.create({
-      header: 'Actions',
+      header: 'Example header',
       backdropDismiss:false,
+      subHeader: 'Example subheader',
+      cssClass: 'my-custom-class',
       buttons: [
         {
           text: 'Delete',
@@ -45,6 +47,8 @@ export class ActionSheetPage implements OnInit {
       ],
     });
 
-    await actionSheet.present();
+    actionSheet.present();
   }
+  /* Terminando action sheet */
+
 }
